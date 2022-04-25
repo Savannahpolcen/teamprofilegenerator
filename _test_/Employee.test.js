@@ -1,11 +1,17 @@
 const Employee = require('../lib/Employee.js')
 
+
+
+jest.mock('../lib/Employee.js');
+
+
 test ('creates Employee object', ()=>{
     const Employee = new Employee('Sally');
 
     expect(Employee.name).toBe('Sally');
     expect(Employee.officenum).toEqual(expect.any(Number));
     expect(Employee.id).toEqual(expectany(Number));
+
 
 });
 
